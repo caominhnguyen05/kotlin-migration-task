@@ -1,5 +1,5 @@
 import { useState, useEffect, useMemo } from "react";
-import Button from "@rescui/button";
+import { Button } from "@rescui/button";
 import { useTextStyles } from "@rescui/typography";
 import { cardCn } from "@rescui/card";
 import { ThemeProvider } from "@rescui/ui-contexts";

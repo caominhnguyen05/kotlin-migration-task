@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "@rescui/button";
+import { Button } from "@rescui/button";
 import { useTextStyles } from "@rescui/typography";
 import cn from "classnames";
 
