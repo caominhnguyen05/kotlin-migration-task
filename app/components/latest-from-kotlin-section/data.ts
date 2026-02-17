@@ -1,11 +1,11 @@
 // Define new interface for newsData
-export interface newsDataItem {
+export interface NewsDataItem {
   title: string;
   link: string;
   tag: string;
 }
 
-export const newsData: newsDataItem[] = [
+export const newsData: NewsDataItem[] = [
   {
     title: "Kotlin 1.6.0 is released",
     link: "https://blog.jetbrains.com/kotlin/2021/11/kotlin-1-6-0-is-released/",
