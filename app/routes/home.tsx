@@ -5,9 +5,12 @@ import "@rescui/typography/lib/font-jb-sans-auto.css";
 import hljs from "highlight.js/lib/core";
 import kotlin from "highlight.js/lib/languages/kotlin";
 import "highlight.js/styles/github.css";
-hljs.registerLanguage("kotlin", kotlin);
 
-// Components
+import { ThemeProvider } from "@rescui/ui-contexts";
+
+import "../app.scss";
+
+// Import components
 import { HeaderSection } from "~/components/header-section/header-section";
 import { LatestFromKotlinSection } from "~/components/latest-from-kotlin-section/latest-from-kotlin-section";
 import { StartSection } from "~/components/start-section/start-section";
@@ -21,7 +24,7 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function OverviewPage() {
+function OverviewPageContent() {
   useEffect(() => {
     // Initialize Highlight.js
     if (!hljs.getLanguage("kotlin")) {
@@ -38,5 +41,13 @@ export default function OverviewPage() {
       <UsageSection />
       <StartSection />
     </div>
+  );
+}
+
+export default function OverviewPage() {
+  return (
+    <ThemeProvider theme="dark">
+      <OverviewPageContent />
+    </ThemeProvider>
   );
 }
