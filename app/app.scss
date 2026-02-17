@@ -1,7 +1,12 @@
-@import "@rescui/typography/lib/font-jb-sans-auto.css";
-@import "./styles/grid.scss";
+@use "./styles/grid";
 
 // Content in legacy page/index/index.scss
 .overview-page {
   background-color: #27282c;
+}
+
+body {
+  font-family: "Inter";
+  margin: 0;
+  padding: 0;
 }
