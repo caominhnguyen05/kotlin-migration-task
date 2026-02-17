@@ -19,8 +19,8 @@ import { WhyKotlinSection } from "~/components/why-kotlin-section/why-kotlin-sec
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Kotlin Programming Language" },
+    { name: "description", content: "Migrated Kotlin homepage" },
   ];
 }
 
